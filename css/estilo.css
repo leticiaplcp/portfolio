@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, button, input, select, textarea{
+    font-family: "Heebo", sans-serif;
+}
+
+body{
+    background-color: #2B2B2B;
+}
+header{
+    background-color: #212121;
+    height: 80px;
+} 
+
+/*menu padrão*/
+header #navbar{
+    display: flex;
+    justify-content: space-between;/*importante*/
+    align-items: center;
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+}
+header #navbar .nav-brand{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #BB9C5F;
+}
+header #navbar .nav-list{
+    list-style: none;
+    display: flex;/*links um do lado do outro*/
+    align-items: center;
+    gap: 2rem;
+}
+header #navbar .nav-list .nav-item a{
+    text-decoration: none;
+    color: #BB9C5F;
+    font-size: 20px;
+    font-weight: 500;
+}
+header #navbar .nav-list .nav-item a:hover{
+    color: #777;
+    transition: color 0.3s;
+}
+/*final do menu*/
+
+/*section banner*/
+
+main{
+    margin-top: 6rem;
+
+}
+main #banner {
+    display: flex;/*um do lado do outro*/
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+main #banner .banner-content{
+    max-width: 600px;
+
+}
+main #banner .banner-content .banner-content-title{
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 40px;
+    color: #BB9C5F;
+}
+main #banner .banner-content .banner-content-subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fffcf3;
+    margin-bottom: 38px;
+    text-align: justify;
+}
+main #banner .banner-content .banner-content-btn{
+    background-color: #467031;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 2px;
+    padding: 8px 24px;
+    border: none;
+}
+main #banner .banner-image{
+    border-radius: 50%;
+    width: 100%;
+    max-width: 350px;
+}
+@media(max-width: 920px){
+    main #banner{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+    }
+    main #banner .banner-content{
+        text-align: center;
+    }
+}
+/*final da section*/
+/*sections posts*/
+section#posts{
+    margin-top: 71px;
+    background-color: #212121;
+}
+#posts .posts-content{
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#posts .posts-content .posts-content-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+#posts .posts-content .posts-content-header .section-title{
+    font-size: 22px;
+    font-weight: 500;
+    color: #BB9C5F;
+}
+#posts .posts-content .posts-content-header .view-all-link{
+    text-decoration: none;
+    color: #467031;
+}
+#posts .posts-content .posts-cards{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+#posts .posts-content .posts-cards .post-card{
+    background-color: #cdb481;/*#EDD8AA  #E3CEA4  #E9CE99*/
+    padding: 24px;
+    margin-bottom: 3rem;
+}
+#posts .posts-content .posts-cards .post-card h3{
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #212121;
+}
+#posts .posts-content .posts-cards .post-card span{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    display: block;
+}
+@media (max-widht: 740px){
+    #posts .posts-content .posts-cards{
+        flex-direction: column;
+    }
+}
